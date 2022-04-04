@@ -1,0 +1,195 @@
+{
+  "users": [
+    {
+      "firstName": "Suchana",
+      "lastName": "Mitra",
+      "username": "suchana@gmail.com",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "firstName": "Suchana",
+      "lastName": "Mitra",
+      "username": "suchana123",
+      "password": "Dankuni@12",
+      "confirmPassword": "Dankuni@12",
+      "id": 2
+    }
+  ],
+  "foodList": [
+    {
+      "id": 1,
+      "restaurant": "reddys biriyani zone",
+      "dishName": "roasted chicken biriyani",
+      "description": "Indian Restaurant",
+      "rating": 4,
+      "cost": 190,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 2,
+      "restaurant": "kabablo",
+      "dishName": "Cajun spiced chicken",
+      "description": "Indian Restaurant",
+      "rating": 4.1,
+      "cost": 230,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 3,
+      "restaurant": "main land china",
+      "dishName": "Veg Momos",
+      "description": "Chineese Restaurant",
+      "rating": 3.9,
+      "cost": 250,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 4,
+      "restaurant": "beijing bites",
+      "dishName": "cripy fried chicken momos",
+      "description": "Chineese Restaurant",
+      "rating": 4.2,
+      "cost": 180,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 5,
+      "restaurant": "mcdonald's",
+      "dishName": "American cheese burger",
+      "description": "American Restaurant",
+      "rating": 3.9,
+      "cost": 260,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 6,
+      "restaurant": "KFC",
+      "dishName": "KFC chicken bucket",
+      "description": "American Restaurant",
+      "rating": 4.1,
+      "cost": 599,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 7,
+      "restaurant": "home kitchen services",
+      "dishName": "mix non veg noodles",
+      "description": "Chineese Restaurant",
+      "rating": 3.9,
+      "cost": 100,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 8,
+      "restaurant": "hotel shalimar",
+      "dishName": "chicken fried rice",
+      "description": "chineese Restaurant",
+      "rating": 4.4,
+      "cost": 190,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 9,
+      "restaurant": "al arabia",
+      "dishName": "Chicken shawarma",
+      "description": "Lebaneese style Restaurant",
+      "rating": 4.2,
+      "cost": 120,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 10,
+      "restaurant": "al bek",
+      "dishName": "Alfaham Chicken",
+      "description": "Lebaneese style Restaurant",
+      "rating": 4.1,
+      "cost": 230,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 8,
+      "restaurant": "hotel shalimar",
+      "dishName": "chicken fried rice",
+      "description": "chineese Restaurant",
+      "rating": 4.4,
+      "cost": 190,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 9,
+      "restaurant": "al arabia",
+      "dishName": "Chicken shawarma",
+      "description": "Lebaneese style Restaurant",
+      "rating": 4.2,
+      "cost": 120,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "id": 10,
+      "restaurant": "al bek",
+      "dishName": "Alfaham Chicken",
+      "description": "Lebaneese style Restaurant",
+      "rating": 4.1,
+      "cost": 230,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+    },
+    {
+      "feedId": 14,
+      "restaurant": "reddys biriyani zone",
+      "dishName": "roasted chicken biriyani",
+      "description": "Indian Restaurant",
+      "rating": 4,
+      "cost": 190,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+      "id": 11
+    },
+    {
+      "feedId": 14,
+      "restaurant": "reddys biriyani zone",
+      "dishName": "roasted chicken biriyani",
+      "description": "Indian Restaurant",
+      "rating": 4,
+      "cost": 190,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+      "id": 12
+    },
+    {
+      "feedId": 16,
+      "restaurant": "reddys biriyani zone",
+      "dishName": "roasted chicken biriyani",
+      "description": "Indian Restaurant",
+      "rating": 4,
+      "cost": 190,
+      "unique": 0.5204481863089581,
+      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+      "id": 13
+    }
+  ],
+  "orders": [
+    {
+      "userid": 1,
+      "feedId": 5,
+      "orderstatus": "placed",
+      "paymentStatus": "paid",
+      "orderDateTime": "3/30/2022:1:17:33 PM",
+      "id": 1
+    },
+    {
+      "userid": 2,
+      "feedId": 7,
+      "orderstatus": "placed",
+      "paymentStatus": "paid",
+      "orderDateTime": "3/30/2022:2:48:14 PM",
+      "id": 2
+    },
+    {
+      "userid": 3,
+      "feedId": 2,
+      "orderstatus": "placed",
+      "paymentStatus": "paid",
+      "orderDateTime": "3/30/2022:8:12:41 PM",
+      "id": 3
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 
 //mdb module
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -27,6 +28,9 @@ import { MainNavigationComponent } from './library/main-navigation/main-navigati
 import { RegistrationComponent } from './views/registration/registration.component';
 import { LoginComponent } from './views/login/login.component';
 import { ForgetPasswordComponent } from './views/forget-password/forget-password.component';
+import { AlertComponent} from './library/alert/alert.component';
+import { HomeComponent } from './views/home/home.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component'
 
 @NgModule({
   declarations: [
@@ -36,12 +40,16 @@ import { ForgetPasswordComponent } from './views/forget-password/forget-password
     MainNavigationComponent,
     RegistrationComponent,
     LoginComponent,
-    ForgetPasswordComponent
+    ForgetPasswordComponent,
+    AlertComponent,
+    HomeComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
     //mdb module
     MdbAccordionModule,
     MdbCarouselModule,
