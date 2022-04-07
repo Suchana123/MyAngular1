@@ -1,7 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
+import {ModalModule} from 'ng-uikit-pro-standard'
+import { fakeBackendProvider } from './_helper/fake-backend';
 
 //mdb module
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -11,6 +14,8 @@ import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
 import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
 import { MdbFormsModule } from 'mdb-angular-ui-kit/forms';
 import { MdbModalModule } from 'mdb-angular-ui-kit/modal';
+
+
 import { MdbPopoverModule } from 'mdb-angular-ui-kit/popover';
 import { MdbRadioModule } from 'mdb-angular-ui-kit/radio';
 import { MdbRangeModule } from 'mdb-angular-ui-kit/range';
@@ -30,7 +35,10 @@ import { LoginComponent } from './views/login/login.component';
 import { ForgetPasswordComponent } from './views/forget-password/forget-password.component';
 import { AlertComponent} from './library/alert/alert.component';
 import { HomeComponent } from './views/home/home.component';
-import { DashboardComponent } from './views/dashboard/dashboard.component'
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { FoodCardComponent } from './library/cards/food-card/food-card.component';
+import { PlaceOrderComponent } from './library/modals/place-order/place-order.component';
+import { MyCartComponent } from './views/my-cart/my-cart.component'
 
 @NgModule({
   declarations: [
@@ -43,12 +51,16 @@ import { DashboardComponent } from './views/dashboard/dashboard.component'
     ForgetPasswordComponent,
     AlertComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    FoodCardComponent,
+    PlaceOrderComponent,
+    MyCartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     //mdb module
     MdbAccordionModule,
@@ -66,8 +78,9 @@ import { DashboardComponent } from './views/dashboard/dashboard.component'
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
+    ModalModule.forRoot()
   ],
-  providers: [],
+  providers: [fakeBackendProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

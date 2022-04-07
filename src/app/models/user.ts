@@ -1,3 +1,5 @@
+import { AddressDetails } from "./address.model";
+
 export interface User {
     id: number;
     username: string;
@@ -5,4 +7,6 @@ export interface User {
     firstName: string;
     lastName: string;
     token: string;
+    address?: AddressDetails[];
+    // payment: IPaymentDetails[];
 }

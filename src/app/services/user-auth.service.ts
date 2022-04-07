@@ -25,7 +25,7 @@ export class UserAuthService {
 
     login(username : string, password : string) {
 
-          return this.http.get<any>(`http://localhost:3000/login`,  {params:{"email": username, "password": password}})
+          return this.http.get<any>(`http://localhost:3000/login`,  {params:{"username": username, "password": password}})
           .pipe(map((user:any) => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('currentUser', JSON.stringify(user));

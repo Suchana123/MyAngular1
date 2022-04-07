@@ -1,0 +1,31 @@
+.card {
+    height: 100%;
+    .card-img-top {
+        height: 220px !important;
+    }
+    .card-body {
+        padding: 15px;
+        .left-part {
+            width: 70%;
+            float: left;
+        }
+        .right-part{
+            width: 25%;
+            float: right;
+            text-align: right;
+        }
+        .rating {
+            padding: 3px 10px;
+            background: green;
+            color: white;
+            border-radius: 4px;
+            font-size: 14px;
+            .fa-star{
+                font-size: 12px;
+            }
+        }
+        .btn {
+            padding: 10px !important;
+        }
+    }
+}

@@ -14,6 +14,33 @@
       "password": "Dankuni@12",
       "confirmPassword": "Dankuni@12",
       "id": 2
+    },
+    {
+      "firstName": "Suchana",
+      "lastName": "Mitra",
+      "username": "Suchana1234",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "disclaimer": true,
+      "id": 3
+    },
+    {
+      "firstName": "Suchana",
+      "lastName": "Mitra",
+      "username": "suchana@gmail",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "disclaimer": true,
+      "id": 4
+    },
+    {
+      "firstName": "aa",
+      "lastName": "aa",
+      "username": "aa",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "disclaimer": true,
+      "id": 5
     }
   ],
   "foodList": [
@@ -24,7 +51,7 @@
       "description": "Indian Restaurant",
       "rating": 4,
       "cost": 190,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5410401/pexels-photo-5410401.jpeg"
     },
     {
       "id": 2,
@@ -33,7 +60,7 @@
       "description": "Indian Restaurant",
       "rating": 4.1,
       "cost": 230,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
     },
     {
       "id": 3,
@@ -42,7 +69,7 @@
       "description": "Chineese Restaurant",
       "rating": 3.9,
       "cost": 250,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5409010/pexels-photo-5409010.jpeg"
     },
     {
       "id": 4,
@@ -51,7 +78,7 @@
       "description": "Chineese Restaurant",
       "rating": 4.2,
       "cost": 180,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
     },
     {
       "id": 5,
@@ -60,7 +87,7 @@
       "description": "American Restaurant",
       "rating": 3.9,
       "cost": 260,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
     },
     {
       "id": 6,
@@ -69,7 +96,7 @@
       "description": "American Restaurant",
       "rating": 4.1,
       "cost": 599,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
     },
     {
       "id": 7,
@@ -78,7 +105,7 @@
       "description": "Chineese Restaurant",
       "rating": 3.9,
       "cost": 100,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg"
     },
     {
       "id": 8,
@@ -87,7 +114,7 @@
       "description": "chineese Restaurant",
       "rating": 4.4,
       "cost": 190,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/3926133/pexels-photo-3926133.jpeg"
     },
     {
       "id": 9,
@@ -96,7 +123,7 @@
       "description": "Lebaneese style Restaurant",
       "rating": 4.2,
       "cost": 120,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg"
     },
     {
       "id": 10,
@@ -105,34 +132,7 @@
       "description": "Lebaneese style Restaurant",
       "rating": 4.1,
       "cost": 230,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
-    },
-    {
-      "id": 8,
-      "restaurant": "hotel shalimar",
-      "dishName": "chicken fried rice",
-      "description": "chineese Restaurant",
-      "rating": 4.4,
-      "cost": 190,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
-    },
-    {
-      "id": 9,
-      "restaurant": "al arabia",
-      "dishName": "Chicken shawarma",
-      "description": "Lebaneese style Restaurant",
-      "rating": 4.2,
-      "cost": 120,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
-    },
-    {
-      "id": 10,
-      "restaurant": "al bek",
-      "dishName": "Alfaham Chicken",
-      "description": "Lebaneese style Restaurant",
-      "rating": 4.1,
-      "cost": 230,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff"
+      "imageUrl": "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg"
     },
     {
       "feedId": 14,
@@ -141,18 +141,8 @@
       "description": "Indian Restaurant",
       "rating": 4,
       "cost": 190,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff",
+      "imageUrl": "https://images.pexels.com/photos/5410401/pexels-photo-5410401.jpeg",
       "id": 11
-    },
-    {
-      "feedId": 14,
-      "restaurant": "reddys biriyani zone",
-      "dishName": "roasted chicken biriyani",
-      "description": "Indian Restaurant",
-      "rating": 4,
-      "cost": 190,
-      "imageUrl": "http://dummyimage.com/128x100.png/ff4444/ffffff",
-      "id": 12
     },
     {
       "feedId": 16,

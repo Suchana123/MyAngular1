@@ -4,6 +4,7 @@ import { RegistrationComponent } from './views/registration/registration.compone
 import { LoginComponent } from './views/login/login.component';
 import { ForgetPasswordComponent } from './views/forget-password/forget-password.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { MyCartComponent } from './views/my-cart/my-cart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/registration', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'passwordreset', component: ForgetPasswordComponent },
   { path: 'home', component: DashboardComponent },
+  { path: 'my-cart', component: MyCartComponent },
 ];
 
 @NgModule({

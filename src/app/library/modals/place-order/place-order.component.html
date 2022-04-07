@@ -1,0 +1,30 @@
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+  mdbModal
+  #podcastInfo="mdbModal"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">{{foodItem.restaurant}}</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="close()"></button>
+      </div>
+      <div class="modal-body">
+          <img [src]="foodItem.imageUrl" class="food-image">
+          <p> {{foodItem.dishName}}</p>
+          <p> {{foodItem.description}}</p>
+          <span>Cost:  &#8377;{{foodItem.cost}}</span> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="addItem(foodItem)">{{firstButtonText}}</button>
+        <button type="button" class="btn btn-primary" (click)="close()">{{seconButtonText}}</button>
+      </div>
+    </div>
+  </div>
+</div>

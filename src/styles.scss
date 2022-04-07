@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'assets/scss/global.scss';
+
 
 @import "~mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+@import '~ng-uikit-pro-standard/assets/scss/mdb';
+
+@import 'assets/scss/global.scss';
+
+@import '~font-awesome/scss/font-awesome';

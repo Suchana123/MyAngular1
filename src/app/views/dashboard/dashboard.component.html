@@ -1,1 +1,17 @@
-<p>dashboard works!</p>
+<app-header [isNavigation]="true"></app-header>
+<div class="dashboard-top">
+    <img src="../../../assets/img/dashboard/hero.jpg" class="high-res-image" alt="" role="presentation">
+    <div class="text-wrapper">
+        <h2>Discover Best Food in Foddie</h2>
+    </div>
+
+    <input type="text" class="form-control search" placeholder="Search Fodd/Restaurant" aria-label="Search" ria-label="Search" [(ngModel)]='searchText' 
+    (ngModelChange)="getAllFood()"/>
+
+</div>
+
+<div *ngIf="isResponse" class="container mt-5 px-5">
+    <app-food-card [FoodList]="foodList"></app-food-card>
+
+</div>
+

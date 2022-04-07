@@ -1,0 +1,94 @@
+<app-header [isNavigation]="true"></app-header>
+
+<div class="container">
+    <div>
+        <ng-container *ngIf="OrderList[0]; then orderList; else EmptyCart">
+
+        </ng-container>
+    </div>
+</div>
+<ng-template  #orderList>
+    <div class="order-list-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <table class="table align-middle mb-0 bg-white">
+                        <thead class="bg-light">
+                          <tr>
+                            <th>Your Item</th>
+                            <th>Base Price</th>
+                            <th>Qty</th>
+                            <th>Item Price</th>
+                            <th></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let foodItem of OrderList">
+                            <td>
+                              <div class="d-flex align-items-center">
+                                <img
+                                    src="{{foodItem.imageUrl}}"
+                                    alt=""
+                                    style="width: 45px; height: 45px"
+                                    class="rounded-circle"
+                                    />
+                                <div class="ms-3">
+                                  <p class="fw-bold mb-1">{{foodItem.foodName}}</p>
+                                  <p class="text-muted mb-0">{{foodItem.desc}}</p>
+                                </div>
+                              </div>
+                            </td>
+                            <td>
+                              <p class="fw-normal mb-1">{{foodItem.basePrice}}</p>
+                              
+                            </td>
+                            <td>
+                              <p class="fw-normal mb-1">{{foodItem.quantity}}</p>
+                            </td>
+                            <td>{{foodItem.itemPrice}}</td>
+                            <td>
+                              <button type="button" class="btn btn-danger btn-sm" (click)="removeItem(foodItem)">
+                                Remove Item
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <p>Price Details</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="left-part">
+                                <p>SubTotal Item</p>
+                                <p>Tax</p>
+                                <P>Shipping</P>
+                                <p class="mt-5">Order Total</p>
+                            </div>
+                            <div class="right-part">
+                                <p>{{Total}}</p>
+                                <p>{{tax}}</p>
+                                <p>50</p>
+                                <p class="mt-5">{{Total + tax + 50}}</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary">Place Order/Checkout</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+       
+        
+    </div>
+</ng-template>
+
+<ng-template #EmptyCart>
+    <div class="conatiner">
+        <p> Sorry! The cart is empty</p>
+    </div>
+</ng-template>

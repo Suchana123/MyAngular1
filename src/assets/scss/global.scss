@@ -16,3 +16,19 @@
 .h5-responsive {
     font-size: 20px;
 }
+
+//Main navigation css
+.navbar-expand-lg {
+    .collapse.navbar-collapse {
+        display: block !important;
+        .navbar-nav {
+            float : right;
+            margin-right: 35px;
+        }
+    }
+}
+
+//modal css
+.modal-open {
+    overflow: hidden !important;
+}

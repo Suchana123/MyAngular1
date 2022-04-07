@@ -1,0 +1,21 @@
+.order-list-wrapper {
+    .col-sm-8 {
+        table {
+            border: 1px solid #d7d7d7;
+        }
+        
+    }
+    .col-sm-4{
+        .card {
+            border: 1px solid #d7d7d7;
+            .left-part {
+                width: 60%;
+                float: left;
+            }
+            .btn-primary {
+                width: 100%;
+            }
+        }
+        
+    }
+}

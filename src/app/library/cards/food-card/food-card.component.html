@@ -1,0 +1,36 @@
+<div class="row" >
+  
+      <div class="col-sm-3 mb-3" *ngFor="let foodItem of FoodList">
+        <div class="card">
+            <img src="{{foodItem.imageUrl}}" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+              <div class="left-part">
+                  <h5 class="card-title">{{foodItem.restaurant}}</h5>
+                  <p class="card-text">{{foodItem.dishName}}</p>
+                  <p >{{foodItem.description}}</p>
+            </div>
+            <div class="right-part">
+             
+                <span class="rating">{{foodItem.rating}} 
+                  <i class="fa fa-star"></i>
+                </span>
+                <p class="mt-2">&#8377;{{foodItem.cost}}</p>
+              
+            </div>
+            <button type="button" class="btn btn-success" (click)="addToCart.showModal();">
+              Add to Cart
+            </button> &nbsp; &nbsp;
+            <button type="button" class="btn btn-primary" (click)="placeOrder.showModal();">
+             Place Order
+            </button>
+            </div>
+          
+          </div>
+          <app-place-order #addToCart [imageUrl]="foodItem.imageUrl" [restaurant]="foodItem.restaurant" [dishName]="foodItem.dishName" [description]="foodItem.description" [cost]="foodItem.cost" [firstButtonText]="'Confirm Add to cart'" [seconButtonText]="'Cancel'" [foodItem]="foodItem"></app-place-order>
+
+          <app-place-order #placeOrder [imageUrl]="foodItem.imageUrl" [restaurant]="foodItem.restaurant" [dishName]="foodItem.dishName" [description]="foodItem.description" [cost]="foodItem.cost" [firstButtonText]="'Place Order'" [seconButtonText]="'Cancel'"></app-place-order>
+    </div>
+</div>
+
+
+
