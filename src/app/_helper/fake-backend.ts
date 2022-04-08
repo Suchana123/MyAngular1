@@ -11,6 +11,7 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         const { url, method, headers, body, params } = request;
        console.log("inside fake backend");
         let users = JSON.parse(localStorage.getItem('users')||"[{}]") || [];
+        
         // wrap in delayed observable to simulate server api call
         return of(null)
             .pipe(mergeMap(handleRoute))
@@ -51,19 +52,27 @@ export class FakeBackendInterceptor implements HttpInterceptor {
         }
 
         function authenticate() {
+            console.log("Inside auth");
+            console.log(users);
             const username = params.get("username");
             const password = params.get("password");
-            const user = users.find((x:any) => x.username === username && x.password === password);
-            if (!user) return error('Email or password is incorrect');
-            return ok({
-                id: user.id,
-                username: user.username,
-                firstname: user.firstname,
-                lastname: user.lastname,
-                address: user.address? user.address: [],
-                payment: user.payment? user.payment: [],
-                
-            })
+            if (users.length==1){
+                return error('username not found. Kindly register');
+            }
+            else {
+                const user = users.find((x:any) => x.username === username && x.password === password);
+                if (!user) return error('Email or password is incorrect');
+                return ok({
+                    id: user.id,
+                    username: user.username,
+                    firstname: user.firstname,
+                    lastname: user.lastname,
+                    address: user.address? user.address: [],
+                    payment: user.payment? user.payment: [],
+                    
+                })
+            }
+           
         }
 
       

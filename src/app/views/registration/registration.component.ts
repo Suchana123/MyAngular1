@@ -1,10 +1,10 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { first } from 'rxjs/operators';
+import { first, map } from 'rxjs';
 import { Router } from '@angular/router';
 import { MustMatch } from '../../shared/must-match-validator';
 
-import {UserService} from '../../services/user.service'
+import {UserService} from '../../services/user.service';
  //import {  AuthenticationService } from '../_services/authentication.service';
  import {AlertService} from '../../services/alert.service'
 

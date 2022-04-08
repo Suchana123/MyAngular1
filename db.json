@@ -4,15 +4,16 @@
       "firstName": "Suchana",
       "lastName": "Mitra",
       "username": "suchana@gmail.com",
-      "password": "123456",
-      "id": 1
+      "password": "",
+      "id": 1,
+      "confirmPassword": ""
     },
     {
       "firstName": "Suchana",
       "lastName": "Mitra",
       "username": "suchana123",
-      "password": "Dankuni@12",
-      "confirmPassword": "Dankuni@12",
+      "password": "123456",
+      "confirmPassword": "123456",
       "id": 2
     },
     {
@@ -41,6 +42,15 @@
       "confirmPassword": "123456",
       "disclaimer": true,
       "id": 5
+    },
+    {
+      "firstName": "Suchana",
+      "lastName": "Mitra",
+      "username": "suchana123",
+      "password": "Dankuni@12",
+      "confirmPassword": "Dankuni@12",
+      "disclaimer": true,
+      "id": 6
     }
   ],
   "foodList": [

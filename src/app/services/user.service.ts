@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpParams } from '@angular/common/http';
 
 import { User } from '../models/user'
 import {environment} from '../../environments/environment'
@@ -17,6 +17,17 @@ export class UserService {
 
   public register(formData:User):Observable<User>{
     return this.http.post<User>('http://localhost:3000/users',formData)
+  }
+
+  public getUsersDetailsByEmail(username: string):Observable<User>{
+    let params = new HttpParams();
+    params = params.append('username', username)
+    return this.http.get<User>('http://localhost:3000/users', {params} )
+  }
+
+  public updateUser(id: number, data: any):Observable<User>{
+   
+    return this.http.patch<User>(`http://localhost:3000/users/${id}`, data )
   }
 
   getAll() {
