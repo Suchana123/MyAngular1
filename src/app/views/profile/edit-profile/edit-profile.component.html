@@ -1,0 +1,84 @@
+
+<div class="editButton" style="float: right;">
+    <button [ngClass]="{ 'btn btn-secondary ': !edit, 'btn btn-success': edit }" (click)="toggleEdit()">{{btnText}}</button>
+</div>
+<ng-container *ngIf="edit; then Edit; else View">
+    
+</ng-container>
+
+<ng-template #View>
+    <div class="wrapper">
+
+        <div>
+            <p><b>First Name:</b> &nbsp;&nbsp;{{currentUser.firstName}}</p>
+          
+        </div>
+        <div>
+            <p><b>Last Name</b>&nbsp;&nbsp;{{currentUser.lastName}}</p>
+            
+        </div>
+        <div>
+            <p><b>Email Address</b>&nbsp;&nbsp;{{currentUser.username}}</p>
+            
+        </div>
+    </div>
+
+</ng-template>
+
+<ng-template #Edit>
+    <div class="wrapper" >
+         <form [formGroup]="userForm" (ngSubmit)="onSubmit()" >
+            
+           
+        <div class="col-md-6">
+            <p><b>First Name</b></p>
+            <div style="display: flex">
+
+                <input  id="firstname" type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': userFormControls['firstname'].errors && userFormControls['firstname'].touched }"  placeholder="First Name"/> &nbsp;
+                <div *ngIf="userFormControls['firstname'].errors" class="invalid-feedback"   >
+                    <div *ngIf="userFormControls['firstname'].errors['required']">First Name is required</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p><b>Last Name</b></p>
+            <div style="display: flex">
+
+                <input id="lastname" type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'is-invalid': userFormControls['lastname'].errors && userFormControls['lastname'].touched }" placeholder="Last Name"/>&nbsp;
+                <div *ngIf="userFormControls['lastname'].errors" class="invalid-feedback">
+                    <div *ngIf="userFormControls['lastname'].errors['required']">Last Name is required</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p><b>Email Address</b></p>
+            <div style="display: flex">
+
+                <input formControlName="username" type="email" class="form-control"  placeholder="Email"  id="username"
+            [ngClass]="{ 'is-invalid': userFormControls['username'].errors && userFormControls['username'].touched}"/> &nbsp;
+            <div *ngIf="userFormControls['username'].errors" class="invalid-feedback">
+              <div *ngIf="userFormControls['username'].errors['required']">Email is required</div>
+              <div *ngIf="userFormControls['username'].errors['email']">Please enter valid email</div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <p><b>Password</b></p>
+            <div style="display: flex">
+            
+                <input id="password" formControlName="password" type="password" class="form-control" placeholder="Password" [ngClass]="{ 'is-invalid': userFormControls['password'].errors && userFormControls['password'].touched}"/>&nbsp;
+            <div *ngIf="userFormControls['password'].errors" class="invalid-feedback">
+              <div *ngIf="userFormControls['password'].errors['required']">password is required</div>
+              <div *ngIf="userFormControls['password'].errors['minlength']">Password must be of length 6 or more</div>
+        
+            </div>
+            </div>
+        </div>
+        <button [disabled]="disabled" type="submit" class="btn btn-primary">Submit</button>
+    </form> 
+    
+</div>
+
+</ng-template>
+

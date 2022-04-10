@@ -3,18 +3,23 @@
     {
       "firstName": "Suchana",
       "lastName": "Mitra",
-      "username": "suchana@gmail.com",
-      "password": "",
-      "id": 1,
-      "confirmPassword": ""
-    },
-    {
-      "firstName": "Suchana",
-      "lastName": "Mitra",
-      "username": "suchana123",
+      "username": "Suchana123@gmail",
       "password": "123456",
       "confirmPassword": "123456",
-      "id": 2
+      "disclaimer": true,
+      "id": 2,
+      "firstname": "Suchana",
+      "lastname": "Mitra",
+      "email": "Suchana123@gmail",
+      "cpassword": "123456",
+      "address": [
+        {
+          "houseNo": "113",
+          "city": "Dankuni",
+          "state": "West Bengal",
+          "landmark": "Club"
+        }
+      ]
     },
     {
       "firstName": "Suchana",
@@ -24,33 +29,6 @@
       "confirmPassword": "123456",
       "disclaimer": true,
       "id": 3
-    },
-    {
-      "firstName": "Suchana",
-      "lastName": "Mitra",
-      "username": "suchana@gmail",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "disclaimer": true,
-      "id": 4
-    },
-    {
-      "firstName": "aa",
-      "lastName": "aa",
-      "username": "aa",
-      "password": "123456",
-      "confirmPassword": "123456",
-      "disclaimer": true,
-      "id": 5
-    },
-    {
-      "firstName": "Suchana",
-      "lastName": "Mitra",
-      "username": "suchana123",
-      "password": "Dankuni@12",
-      "confirmPassword": "Dankuni@12",
-      "disclaimer": true,
-      "id": 6
     }
   ],
   "foodList": [

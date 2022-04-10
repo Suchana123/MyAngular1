@@ -40,11 +40,14 @@ export class FakeBackendInterceptor implements HttpInterceptor {
             const user = body;
             console.log(user);
            
-            if (users.find((x:any) => x.username === user.username)) {   
-                return error('Email "' + user.username + '" is already taken')
+            if (users.find((x:any) => x.username === user.username)) { 
+                console.log("error occured");  
+                //return error();
+                return error('Email "' + user.username + '" is already taken');
             }
-
-            user.id = users.length ? Math.max(...users.map((x:any) => x.id)) + 1 : 1;
+            console.log("user", user);
+            user.id = users.length ? users.length + 1 : 1;
+            console.log(user.id);
             users.push(user);
             localStorage.setItem('users', JSON.stringify(users));
 
@@ -65,8 +68,8 @@ export class FakeBackendInterceptor implements HttpInterceptor {
                 return ok({
                     id: user.id,
                     username: user.username,
-                    firstname: user.firstname,
-                    lastname: user.lastname,
+                    firstName: user.firstName,
+                    lastName: user.lastName,
                     address: user.address? user.address: [],
                     payment: user.payment? user.payment: [],
                     

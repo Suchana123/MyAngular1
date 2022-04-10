@@ -19,6 +19,10 @@ export class UserService {
     return this.http.post<User>('http://localhost:3000/users',formData)
   }
 
+  public getUsersDetails():Observable<User[]>{
+    return this.http.get<User[]>('http://localhost:3000/users')
+  }
+
   public getUsersDetailsByEmail(username: string):Observable<User>{
     let params = new HttpParams();
     params = params.append('username', username)
@@ -26,7 +30,7 @@ export class UserService {
   }
 
   public updateUser(id: number, data: any):Observable<User>{
-   
+    console.log(id, data);
     return this.http.patch<User>(`http://localhost:3000/users/${id}`, data )
   }
 

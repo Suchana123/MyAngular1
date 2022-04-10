@@ -23,11 +23,16 @@ export class UserAuthService {
         return this.currentUserSubject.value;
     }
 
+    public set currentUserUpdate(user: User){
+        this.currentUserSubject.next(user);
+      }
+
     login(username : string, password : string) {
 
           return this.http.get<any>(`http://localhost:3000/login`,  {params:{"username": username, "password": password}})
           .pipe(map((user:any) => {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
+              console.log(user);
               localStorage.setItem('currentUser', JSON.stringify(user));
               this.currentUserSubject.next(user);
               return user;

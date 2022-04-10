@@ -82,8 +82,8 @@ export class RegistrationComponent implements OnInit {
               this.router.navigate(['/login']);
           },
           error => {
-            //this.alertService.error(error);
-            console.log(error);
+            this.alertService.error("Username Exist");
+            //console.log(error.message);
               this.loading = false;
           });
 }
