@@ -19,6 +19,15 @@
           "state": "West Bengal",
           "landmark": "Club"
         }
+      ],
+      "payment": [
+        {
+          "name": "Suchana Mitra",
+          "cardNo": "12345678901234561",
+          "month": "4",
+          "year": "2023",
+          "cvv": "344"
+        }
       ]
     },
     {

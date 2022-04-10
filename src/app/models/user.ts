@@ -1,5 +1,5 @@
 import { AddressDetails } from "./address.model";
-
+import { PaymentDetails } from "./payment.model";
 export interface User {
     id: number;
     username: string;
@@ -8,5 +8,5 @@ export interface User {
     lastName: string;
     token?: string;
     address?: AddressDetails[];
-    // payment: IPaymentDetails[];
+    payment?: PaymentDetails[];
 }

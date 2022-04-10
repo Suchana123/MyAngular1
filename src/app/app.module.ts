@@ -41,7 +41,8 @@ import { PlaceOrderComponent } from './library/modals/place-order/place-order.co
 import { MyCartComponent } from './views/my-cart/my-cart.component';
 import { SettingsComponent } from './views/profile/settings.component';
 import { EditProfileComponent } from './views/profile/edit-profile/edit-profile.component';
-import {UserAddressComponent} from './views/profile/user-address/user-address.component'
+import {UserAddressComponent} from './views/profile/user-address/user-address.component';
+import { PaymentDetailsComponent } from './views/profile/payment-details/payment-details.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import {UserAddressComponent} from './views/profile/user-address/user-address.co
     MyCartComponent,
     SettingsComponent,
     EditProfileComponent,
-    UserAddressComponent
+    UserAddressComponent,
+    PaymentDetailsComponent
   ],
   imports: [
     BrowserModule,
