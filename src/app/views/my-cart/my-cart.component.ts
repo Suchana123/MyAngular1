@@ -16,9 +16,9 @@ export class MyCartComponent implements OnInit {
   public Total: number;
   public tax: number;
   public shippingCharge: number;
-  public disabled: boolean;
+
   public currentUser: User;
-  public isAddress: boolean
+  public isAddress1: boolean
 
   constructor(
     private orderService: OrderService,
@@ -28,9 +28,8 @@ export class MyCartComponent implements OnInit {
     this.Total = 0;
     this.tax = 0;
     this.shippingCharge = 0;
-    this.disabled = true;
     this.currentUser = {} as User;
-    this.isAddress = true;
+    this.isAddress1 = true;
    }
 
   ngOnInit(): void {
@@ -40,10 +39,13 @@ export class MyCartComponent implements OnInit {
     this.authenticationService.currentUser.subscribe((user) => {
       this.currentUser = user;
       if(this.currentUser.address){
-        this.isAddress = this.currentUser.address.length ? true : false;
+        this.isAddress1 = this.currentUser.address.length == 1 ? false : true;
+        console.log(this.isAddress1);
       }
     });
-    //console.log(this.isAddress);
+    console.log("address",this.currentUser.address?.length);
+    console.log(this.isAddress1);
+    
   }
 
   public calculateTax(): void{
@@ -55,7 +57,7 @@ export class MyCartComponent implements OnInit {
     this.Total = total;
    
     this.tax = Math.floor((total * 10) / 100)
-    this.orderService.setTotal = this.Total + this.tax + (this.OrderList.length === 0? 0: 40)
+    this.orderService.setTotal = this.Total + this.tax + (this.OrderList.length === 0? 0: 50)
   }
   
   removeItem(foodList : OrderDetails) {

@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
             },
             error => {
               console.log(error);
-                this.alertService.error(error);
+                this.alertService.error("Wrong username or Password");
                 this.loading = false;
             });
   }

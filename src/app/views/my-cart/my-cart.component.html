@@ -75,17 +75,35 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-primary">Place Order/Checkout</button>
+                            <button [disabled]="isAddress1" class="btn btn-primary" ><a class="place-order-link" routerLink="/placeorder">Place Order/Checkout</a></button>
                         </div>
                     </div>
                     
                 </div>
             </div>
+            
         </div>
        
         
     </div>
 </ng-template>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8"></div>
+    <div class="col-sm-4 mt-3">
+      
+      <a class="btn btn-primary d-block mt-5 mb-5" routerLink="/settings/useraddaddress">
+        <p>Add Address</p> 
+      </a>
+    
+      <a class="btn btn-secondary d-block" routerLink="/settings/paymentdetails">
+        <p>Add Payment Details</p> 
+      </a>
+
+    </div>            
+  </div>
+</div>
 
 <ng-template #EmptyCart>
     <div class="conatiner">

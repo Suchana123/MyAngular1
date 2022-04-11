@@ -4,8 +4,8 @@
       "firstName": "Suchana",
       "lastName": "Mitra",
       "username": "Suchana123@gmail.com",
-      "password": "123456",
-      "confirmPassword": "123456",
+      "password": "1234567",
+      "confirmPassword": "1234567",
       "disclaimer": true,
       "id": 2,
       "firstname": "Suchana",
@@ -48,7 +48,7 @@
       "description": "Indian Restaurant",
       "rating": 4,
       "cost": 190,
-      "imageUrl": "https://images.pexels.com/photos/5410401/pexels-photo-5410401.jpeg"
+      "imageUrl": "/assets/img/food/biriyani.jpeg"
     },
     {
       "id": 2,
@@ -57,7 +57,7 @@
       "description": "Indian Restaurant",
       "rating": 4.1,
       "cost": 230,
-      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 3,
@@ -66,7 +66,7 @@
       "description": "Chineese Restaurant",
       "rating": 3.9,
       "cost": 250,
-      "imageUrl": "https://images.pexels.com/photos/5409010/pexels-photo-5409010.jpeg"
+      "imageUrl": "/assets/img/food/momo.jpeg"
     },
     {
       "id": 4,
@@ -75,7 +75,7 @@
       "description": "Chineese Restaurant",
       "rating": 4.2,
       "cost": 180,
-      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 5,
@@ -84,7 +84,7 @@
       "description": "American Restaurant",
       "rating": 3.9,
       "cost": 260,
-      "imageUrl": "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg"
+      "imageUrl": "/assets/img/food/burger.jpeg"
     },
     {
       "id": 6,
@@ -93,7 +93,7 @@
       "description": "American Restaurant",
       "rating": 4.1,
       "cost": 599,
-      "imageUrl": "https://images.pexels.com/photos/5474676/pexels-photo-5474676.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 7,
@@ -102,7 +102,7 @@
       "description": "Chineese Restaurant",
       "rating": 3.9,
       "cost": 100,
-      "imageUrl": "https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 8,
@@ -111,7 +111,7 @@
       "description": "chineese Restaurant",
       "rating": 4.4,
       "cost": 190,
-      "imageUrl": "https://images.pexels.com/photos/3926133/pexels-photo-3926133.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 9,
@@ -120,7 +120,7 @@
       "description": "Lebaneese style Restaurant",
       "rating": 4.2,
       "cost": 120,
-      "imageUrl": "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 10,
@@ -129,7 +129,7 @@
       "description": "Lebaneese style Restaurant",
       "rating": 4.1,
       "cost": 230,
-      "imageUrl": "https://images.pexels.com/photos/5718025/pexels-photo-5718025.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "feedId": 14,
@@ -138,7 +138,7 @@
       "description": "Indian Restaurant",
       "rating": 4,
       "cost": 190,
-      "imageUrl": "https://images.pexels.com/photos/5410401/pexels-photo-5410401.jpeg",
+      "imageUrl": "/assets/img/food/chicken.jpeg",
       "id": 11
     },
     {

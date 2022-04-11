@@ -78,10 +78,7 @@ export class PlaceOrderComponent implements OnInit {
     get cardFormControls(){
       return this.cardForm.controls;
     }
-  // ngAfterViewInit(): void{  
-  //   this.showPaymentOptions();
-    
-  // }
+
   
   ngDoCheck(): void{
     
@@ -146,30 +143,11 @@ export class PlaceOrderComponent implements OnInit {
     })   
   }
 
-  public getOrderHistory(): void{
-    this.foodService.getOrdersList().pipe(map((item: OrderStatus[])=>{
-      return item.filter((item: OrderStatus)=>{
-        return (
-          item.id == this.searchText
-        )
-      })
-    })).subscribe((res: OrderStatus[])=>{
-      this.orderHistory = res[0];
-      //this.showOrderHistory = true;
-      this.OrderSuccess.showModal();
-
-    })
-   
-    
-  }
+  
   public changeOption(opt: string): void{
     this.payOpt = opt;
     this.resetForm();
   }
 
-  // public showPaymentOptions(): void{
-  //   this.modalService.open(this.paymentModal);
-    
-    
-  // }
+ 
 }

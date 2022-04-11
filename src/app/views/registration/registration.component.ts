@@ -38,7 +38,7 @@ export class RegistrationComponent implements OnInit {
       this.registerForm = this.formBuilder.group({
         firstName: ['', Validators.required],
         lastName: ['', Validators.required],
-        username: ['', Validators.required],
+        username: ['', [Validators.required,Validators.email]],
         password: ['', [Validators.required, Validators.minLength(6)]],
         confirmPassword: ['',  Validators.required],
         disclaimer: [false]
@@ -62,7 +62,8 @@ export class RegistrationComponent implements OnInit {
   }
 
   get f() { return this.registerForm.controls; }
-
+  
+ 
   onSubmit() {
     this.submitted = true;
 
