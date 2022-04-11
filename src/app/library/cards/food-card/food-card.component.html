@@ -26,9 +26,9 @@
             </div>
           
           </div>
-          <app-place-order #addToCart [imageUrl]="foodItem.imageUrl" [restaurant]="foodItem.restaurant" [dishName]="foodItem.dishName" [description]="foodItem.description" [cost]="foodItem.cost" [firstButtonText]="'Confirm Add to cart'" [seconButtonText]="'Cancel'" [foodItem]="foodItem"></app-place-order>
+          <app-place-order-modal #addToCart [firstButtonText]="'Confirm Add to cart'" [seconButtonText]="'Cancel'" [foodItem]="foodItem" [PlaceOrder]="false"></app-place-order-modal>
 
-          <app-place-order #placeOrder [imageUrl]="foodItem.imageUrl" [restaurant]="foodItem.restaurant" [dishName]="foodItem.dishName" [description]="foodItem.description" [cost]="foodItem.cost" [firstButtonText]="'Place Order'" [seconButtonText]="'Cancel'"></app-place-order>
+          <app-place-order-modal #placeOrder [firstButtonText]="'Place Order'" [seconButtonText]="'Cancel'" [foodItem]="foodItem" [PlaceOrder]="true"></app-place-order-modal>
     </div>
 </div>
 

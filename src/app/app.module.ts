@@ -37,12 +37,15 @@ import { AlertComponent} from './library/alert/alert.component';
 import { HomeComponent } from './views/home/home.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { FoodCardComponent } from './library/cards/food-card/food-card.component';
-import { PlaceOrderComponent } from './library/modals/place-order/place-order.component';
+import { PlaceOrderComponentModal } from './library/modals/place-order/place-order-modal.component';
 import { MyCartComponent } from './views/my-cart/my-cart.component';
 import { SettingsComponent } from './views/profile/settings.component';
 import { EditProfileComponent } from './views/profile/edit-profile/edit-profile.component';
 import {UserAddressComponent} from './views/profile/user-address/user-address.component';
 import { PaymentDetailsComponent } from './views/profile/payment-details/payment-details.component';
+import { PlaceOrderComponent } from './views/place-order/place-order.component';
+import { OrderSuccessComponent } from './library/modals/order-success/order-success-modal.component';
+import { OrderHistoryComponent } from './views/order-history/order-history.component';
 
 @NgModule({
   declarations: [
@@ -57,12 +60,15 @@ import { PaymentDetailsComponent } from './views/profile/payment-details/payment
     HomeComponent,
     DashboardComponent,
     FoodCardComponent,
+    PlaceOrderComponentModal,
     PlaceOrderComponent,
     MyCartComponent,
     SettingsComponent,
     EditProfileComponent,
     UserAddressComponent,
-    PaymentDetailsComponent
+    PaymentDetailsComponent,
+    OrderSuccessComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,

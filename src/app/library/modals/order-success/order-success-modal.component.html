@@ -1,0 +1,30 @@
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-mdb-backdrop="static"
+  data-mdb-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+  mdbModal
+  #podcastInfo="mdbModal"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close" (click)="close()"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="card-title">Feed Id: {{orderDetails.feedId}}</h4>
+        <h4 class="card-title">Payment Status: {{orderDetails.paymentStatus}}</h4>
+        <h4 class="card-title">Order Status: {{orderDetails.orderstatus}}</h4>
+        <h4 class="card-title">Order Time: {{orderDetails.orderDateTime}}</h4>
+
+      <div  class="modal-footer">
+        <button type="button"  class="btn btn-secondary" (click)="goToHome()">Check Order History</button>
+        <button type="button" class="btn btn-primary" (click)="goToHome()">Go To Home</button>
+      </div>
+    </div>
+  </div>
+</div>

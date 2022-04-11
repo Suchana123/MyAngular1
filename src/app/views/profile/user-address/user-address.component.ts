@@ -106,7 +106,7 @@ export class UserAddressComponent implements OnInit {
       lastName: res.lastName,
       username: res.username,
       address: res.address? res.address:[],
-      //payment: res.payment? res.payment: []
+      payment: res.payment? res.payment: []
     }
      
       

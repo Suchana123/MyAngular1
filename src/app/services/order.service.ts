@@ -20,7 +20,21 @@ export class OrderService {
     this.confirmOrderSubject.next(list);
   }
 
+  public clearConfirmOrderList(): void{
+    localStorage.removeItem('confirmOrder')
+    this.confirmOrderSubject.next([]);
+  }
+
+  public set confirmOrderUpdate(list: OrderDetails[]){
+    this.confirmOrderSubject.next(list);
+  }
+
+
   public set setTotal(sum: number){
     this.total = sum;
+  }
+
+  public get getTotal(): number{
+    return this.total;
   }
 }

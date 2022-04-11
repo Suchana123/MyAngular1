@@ -98,8 +98,8 @@ export class EditProfileComponent implements OnInit {
       firstName: res.firstName,
       lastName: res.lastName,
       username: res.username,
-      address: res.address? res.address:[]
-      //payment: res.payment? res.payment: []
+      address: res.address? res.address:[],
+      payment: res.payment? res.payment: []
     }
       
     })

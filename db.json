@@ -3,7 +3,7 @@
     {
       "firstName": "Suchana",
       "lastName": "Mitra",
-      "username": "Suchana123@gmail",
+      "username": "Suchana123@gmail.com",
       "password": "123456",
       "confirmPassword": "123456",
       "disclaimer": true,
@@ -17,7 +17,7 @@
           "houseNo": "113",
           "city": "Dankuni",
           "state": "West Bengal",
-          "landmark": "Club"
+          "landmark": "Club para"
         }
       ],
       "payment": [
@@ -164,10 +164,10 @@
     },
     {
       "userid": 2,
-      "feedId": 7,
+      "feedId": 13,
       "orderstatus": "placed",
       "paymentStatus": "paid",
-      "orderDateTime": "3/30/2022:2:48:14 PM",
+      "orderDateTime": "4/11/2022:1:29:27 PM",
       "id": 2
     },
     {

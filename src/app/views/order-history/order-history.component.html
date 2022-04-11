@@ -1,0 +1,41 @@
+<app-header [isNavigation]="true"></app-header>
+
+<div class="container mt-5">
+    <div class="wrapper">
+        <div class="form-outline">
+            <h3>Order Id</h3>
+            <input type="text" class="form-control" placeholder="Enter Order Id" aria-label="Search" [(ngModel)]='searchText' 
+            />
+            <button class="btn btn-primary" (click)="getOrderHistory()">Get Order</button>
+        </div>
+        <div class="order-status mt-5" *ngIf="showOrderHistory">
+           <ng-container *ngIf="orderHistory; then OrderHistory; else NotFound">
+        
+           </ng-container>
+        </div>
+        
+        <ng-template #NotFound>
+            <h2>OOPS!!! No order history found.</h2>
+        </ng-template> 
+        
+         <ng-template #OrderHistory>
+            <h4>Order History:</h4>
+            <div class="card" style="width: inherit">
+                <div class="card-header">
+                  <h3>User Id: {{orderHistory.userid}}</h3>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">Feed Id: {{orderHistory.feedId}}</h4>
+                  <h4 class="card-title">Payment Status: {{orderHistory.paymentStatus}}</h4>
+                  <h4 class="card-title">Order Status: {{orderHistory.orderstatus}}</h4>
+                
+                </div>
+                <div class="card-header">
+                    <h3>Your order was successfully delivered.</h3>
+                  </div>
+              </div>
+        </ng-template> 
+    </div>
+</div> 
+ 
+ 

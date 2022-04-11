@@ -21,9 +21,13 @@
           <p> {{foodItem.description}}</p>
           <span>Cost:  &#8377;{{foodItem.cost}}</span> 
       </div>
-      <div class="modal-footer">
+      <div *ngIf="!PlaceOrder" class="modal-footer">
         <button type="button" class="btn btn-secondary" (click)="addItem(foodItem)">{{firstButtonText}}</button>
         <button type="button" class="btn btn-primary" (click)="close()">{{seconButtonText}}</button>
+      </div>
+      <div *ngIf="PlaceOrder" class="modal-footer">
+        <button type="button" [disabled]="isAddress" class="btn btn-secondary" (click)="placeOrder(foodItem)">{{firstButtonText}}</button>
+        <button type="button" class="btn btn-primary" (click)="close()">{{seconButtonText}} PO</button>
       </div>
     </div>
   </div>
