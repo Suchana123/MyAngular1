@@ -48,7 +48,7 @@
       "description": "Indian Restaurant",
       "rating": 4,
       "cost": 190,
-      "imageUrl": "/assets/img/food/biriyani.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 2,
@@ -66,7 +66,7 @@
       "description": "Chineese Restaurant",
       "rating": 3.9,
       "cost": 250,
-      "imageUrl": "/assets/img/food/momo.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 4,
@@ -84,7 +84,7 @@
       "description": "American Restaurant",
       "rating": 3.9,
       "cost": 260,
-      "imageUrl": "/assets/img/food/burger.jpeg"
+      "imageUrl": "/assets/img/food/chicken.jpeg"
     },
     {
       "id": 6,
